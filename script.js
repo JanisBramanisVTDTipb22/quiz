@@ -1,0 +1,14 @@
+const toggleTheme = document.getElementById("toggle-theme");
+const html = document.getElementById("html");
+
+console.log(toggleTheme.checked);
+
+toggleTheme.addEventListener("change", toggleThemehandler);
+
+function toggleThemehandler() {
+    if (toggleTheme.checked) {
+    html.dataset.theme = "dark";
+    } else {
+        html.dataset.theme = "light";
+    }
+}
